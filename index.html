@@ -4,24 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>four:wave | 나만의 음악 취향 찾기</title>
+  <title>four:wave | 나만의 음악 찾기</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <div class="site">
 
-  <!-- =============================
-       1. 상단 메뉴
-  ============================== -->
   <header class="header">
-    <a href="#home" class="logo">
-      <span class="logo-icon">♫</span>
-      four:wave
+    <a href="index.html" class="logo">
+      <span class="logo-icon">♫</span> four:wave
     </a>
 
-    <nav class="nav">
-      <a href="#quiz">취향 테스트</a>
+    <nav>
+      <a href="quiz.html">취향 테스트</a>
       <a href="#playlists">플레이리스트</a>
       <a href="#members">팀 소개</a>
     </nav>
@@ -29,27 +25,25 @@
 
   <main>
 
-    <!-- =============================
-         2. 메인 화면
-    ============================== -->
-    <section class="hero" id="home">
+    <!-- 메인 소개 -->
+    <section class="hero">
       <div class="hero-text">
-        <p class="hero-label">FIND YOUR SOUND</p>
+        <span class="hero-label">FIND YOUR SOUND</span>
 
         <h1>
           당신의 취향엔<br>
           어떤 리듬이 흐르나요?
         </h1>
 
-        <p class="hero-description">
+        <p>
           6개의 질문으로 나만의 음악 취향을 발견하고,<br>
           네 명의 큐레이터가 직접 고른<br>
           플레이리스트를 만나보세요.
         </p>
 
-        <button class="start-btn" id="hero-start">
+        <a href="quiz.html" class="primary-btn hero-btn">
           나의 음악 취향 찾기 →
-        </button>
+        </a>
       </div>
 
       <div class="record-area">
@@ -62,837 +56,94 @@
       </div>
     </section>
 
-    <!-- 이용 순서 -->
     <div class="steps">
       <div><strong>01</strong> 취향 테스트</div>
       <div><strong>02</strong> 나의 유형 발견</div>
       <div><strong>03</strong> 플레이리스트 감상</div>
     </div>
 
-    <!-- =============================
-         3. 음악 취향 테스트
-    ============================== -->
-    <section class="section" id="quiz">
-      <div class="section-title">
-        <span class="eyebrow">01 / MUSIC TASTE TEST</span>
-        <h2>나의 음악 취향은 어떤 유형일까?</h2>
+    <!-- 테스트 안내 -->
+    <section class="test-promo">
+      <div class="promo-icon">🎧</div>
+
+      <div>
+        <span class="eyebrow">MUSIC TASTE TEST</span>
+        <h2>나와 어울리는 음악은 무엇일까?</h2>
         <p>
-          정답은 없어요!
-          평소 자신의 음악 취향과 가장 가까운 답변을 골라주세요.
+          그루비 러버? 리듬 중독자?<br>
+          나의 음악 유형을 확인하고 맞춤 플레이리스트를 추천받아 보세요.
         </p>
       </div>
 
-      <div class="quiz-box" id="quiz-box">
-        <!-- JavaScript로 테스트 화면이 표시됩니다 -->
-      </div>
+      <a href="quiz.html" class="primary-btn">
+        테스트 시작 →
+      </a>
     </section>
 
-    <!-- =============================
-         4. 모든 플레이리스트
-    ============================== -->
+    <!-- 모든 팀원 플레이리스트 -->
     <section class="section" id="playlists">
-      <div class="section-title">
-        <span class="eyebrow">02 / EXPLORE PLAYLISTS</span>
-        <h2>다른 플레이리스트도 둘러보세요</h2>
-        <p>
-          테스트를 하지 않아도 괜찮아요.<br>
-          네 명이 직접 고른 플레이리스트를 자유롭게 감상해 보세요!
-        </p>
-      </div>
+      <span class="eyebrow">EXPLORE PLAYLISTS</span>
 
-      <div class="playlist-grid" id="playlist-grid">
-        <!-- 플레이리스트 카드 자동 생성 -->
-      </div>
+      <h2>우리의 플레이리스트</h2>
 
-      <!-- 다른 플레이리스트를 누르면 열리는 영역 -->
-      <div class="playlist-detail" id="playlist-detail" hidden>
-        <div class="detail-top">
-          <h3>PLAYLIST DETAIL</h3>
-          <button class="close-btn" id="close-detail">
-            닫기 ×
-          </button>
+      <p class="section-desc">
+        테스트를 하지 않아도 괜찮아요.<br>
+        네 명이 직접 만든 플레이리스트를 둘러보세요.
+      </p>
+
+      <div class="playlist-grid" id="all-playlists"></div>
+    </section>
+
+    <!-- 팀원 소개 -->
+    <section class="section members-section" id="members">
+      <span class="eyebrow">OUR CURATORS</span>
+      <h2>네 명의 취향, 하나의 음악 공간</h2>
+
+      <p class="section-desc">
+        각자 좋아하는 음악을 직접 고르고 소개하는
+        네 명의 음악 큐레이터입니다.
+      </p>
+
+      <div class="member-grid">
+        <div class="member-card">
+          <span class="member-avatar cover-groove">☾</span>
+          <strong>TEAM 01</strong>
+          <small>R&B · SOUL</small>
         </div>
 
-        <div id="detail-content"></div>
-      </div>
-    </section>
+        <div class="member-card">
+          <span class="member-avatar cover-beat">✷</span>
+          <strong>TEAM 02</strong>
+          <small>HIP-HOP · DANCE</small>
+        </div>
 
-    <!-- =============================
-         5. 팀원 소개
-    ============================== -->
-    <section class="section members-section" id="members">
-      <div class="section-title">
-        <span class="eyebrow">03 / OUR CURATORS</span>
-        <h2>네 명의 취향, 하나의 음악 공간</h2>
-        <p>
-          서로 다른 음악을 좋아하는 네 명이<br>
-          자신만의 시선으로 플레이리스트를 만들고 소개합니다.
-        </p>
-      </div>
+        <div class="member-card">
+          <span class="member-avatar cover-band">✦</span>
+          <strong>TEAM 03</strong>
+          <small>INDIE · ROCK</small>
+        </div>
 
-      <div class="member-grid" id="member-grid">
-        <!-- 팀원 소개 카드 자동 생성 -->
+        <div class="member-card">
+          <span class="member-avatar cover-mellow">♡</span>
+          <strong>TEAM 04</strong>
+          <small>BALLAD · ACOUSTIC</small>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <p>FOUR CURATORS · MANY MOODS · ONE SOUND SPACE</p>
-    <p>© four:wave</p>
+  <footer>
+    FOUR CURATORS · MANY MOODS · ONE SOUND SPACE
   </footer>
 
 </div>
 
-
-<!-- ============================================
-     JavaScript
-     아래 데이터만 수정하면 콘텐츠 변경 가능
-============================================= -->
+<script src="data.js"></script>
 <script>
-
-// =============================================
-// 1. 플레이리스트 데이터
-// =============================================
-// ★ 팀원들이 가장 많이 수정할 부분!
-// title: 플레이리스트 제목
-// member: 제작한 팀원 이름
-// description: 플레이리스트 소개
-// tracks: 실제 수록곡
-// url: 개별 음악 링크
-// embedUrl: 유튜브 재생목록 임베드 주소
-
-const playlists = {
-
-  // 팀원 1 : R&B / SOUL
-  groove: {
-    member: "TEAM 01",
-    genre: "R&B · SOUL",
-    title: "블루아워의 그루브",
-    description:
-      "하루가 끝난 밤, 부드러운 보컬과 매력적인 리듬에 집중하고 싶을 때 듣는 음악을 모았어요.",
-    symbol: "☾",
-    tags: ["그루브", "새벽", "R&B"],
-
-    tracks: [
-      {
-        title: "첫 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      },
-      {
-        title: "두 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      },
-      {
-        title: "세 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      }
-    ],
-
-    embedUrl: ""
-  },
-
-  // 팀원 2 : HIP-HOP / DANCE
-  beat: {
-    member: "TEAM 02",
-    genre: "HIP-HOP · DANCE",
-    title: "오늘은 볼륨을 높여",
-    description:
-      "신나는 비트와 리듬으로 기분을 끌어올리고 싶을 때! 에너지 넘치는 곡을 모은 플레이리스트예요.",
-    symbol: "✷",
-    tags: ["비트", "에너지", "힙합"],
-
-    tracks: [
-      {
-        title: "첫 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      },
-      {
-        title: "두 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      },
-      {
-        title: "세 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      }
-    ],
-
-    embedUrl: ""
-  },
-
-  // 팀원 3 : INDIE / ROCK
-  band: {
-    member: "TEAM 03",
-    genre: "INDIE · ROCK",
-    title: "기타 소리 따라 걷기",
-    description:
-      "시원한 기타와 드럼 사운드, 나만 알고 싶은 밴드의 음악을 소개하는 플레이리스트예요.",
-    symbol: "✦",
-    tags: ["밴드", "인디", "기타"],
-
-    tracks: [
-      {
-        title: "첫 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      },
-      {
-        title: "두 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      },
-      {
-        title: "세 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      }
-    ],
-
-    embedUrl: ""
-  },
-
-  // 팀원 4 : BALLAD / ACOUSTIC
-  mellow: {
-    member: "TEAM 04",
-    genre: "BALLAD · ACOUSTIC",
-    title: "마음에 남는 문장들",
-    description:
-      "가끔은 한 줄의 가사만으로도 위로가 되니까. 따뜻하고 잔잔한 음악을 골랐어요.",
-    symbol: "♡",
-    tags: ["감성", "가사", "어쿠스틱"],
-
-    tracks: [
-      {
-        title: "첫 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      },
-      {
-        title: "두 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      },
-      {
-        title: "세 번째 곡 제목",
-        artist: "가수 이름",
-        url: ""
-      }
-    ],
-
-    embedUrl: ""
-  }
-};
-
-
-// =============================================
-// 2. 음악 취향 유형
-// =============================================
-
-const musicTypes = {
-  groove: {
-    name: "그루비 러버",
-    genre: "R&B · SOUL",
-    description:
-      "부드러운 보컬과 매력적인 베이스라인을 좋아하는 당신! 자연스럽게 몸을 흔들게 만드는 그루브를 사랑하는 유형이에요.",
-    keywords: ["그루브", "감각적인 리듬", "R&B"]
-  },
-
-  beat: {
-    name: "리듬 중독자",
-    genre: "HIP-HOP · DANCE",
-    description:
-      "강렬한 비트에 끌리는 당신! 음악을 통해 에너지를 얻고 신나는 리듬에 몸을 맡기는 유형이에요.",
-    keywords: ["강렬한 비트", "에너지", "힙합"]
-  },
-
-  band: {
-    name: "사운드 탐험가",
-    genre: "INDIE · ROCK",
-    description:
-      "기타와 드럼의 생생한 사운드를 좋아하는 당신! 개성 있는 음악을 발견하는 즐거움을 아는 유형이에요.",
-    keywords: ["밴드", "인디", "새로운 발견"]
-  },
-
-  mellow: {
-    name: "감성 수집가",
-    genre: "BALLAD · ACOUSTIC",
-    description:
-      "따뜻한 멜로디와 마음에 남는 가사를 좋아하는 당신! 노래 속에서 공감과 위로를 발견하는 유형이에요.",
-    keywords: ["가사", "감성", "어쿠스틱"]
-  }
-};
-
-
-// =============================================
-// 3. 음악 취향 테스트 문항
-// =============================================
-
-const questions = [
-  {
-    question: "처음 듣는 노래에서 가장 먼저 귀에 들어오는 건?",
-    options: [
-      { text: "쫀득한 베이스와 부드러운 보컬", type: "groove" },
-      { text: "몸을 움직이게 만드는 강한 비트", type: "beat" },
-      { text: "시원하게 울리는 기타와 드럼", type: "band" },
-      { text: "마음에 남는 가사와 멜로디", type: "mellow" }
-    ]
-  },
-  {
-    question: "이어폰을 끼고 가장 걷고 싶은 장소는?",
-    options: [
-      { text: "바람이 불어오는 한적한 골목", type: "band" },
-      { text: "비가 내리는 창밖을 볼 수 있는 버스 안", type: "mellow" },
-      { text: "불빛이 반짝이는 늦은 밤의 거리", type: "groove" },
-      { text: "신나는 음악이 흐르는 페스티벌", type: "beat" }
-    ]
-  },
-  {
-    question: "친구의 음악 추천 중 가장 끌리는 말은?",
-    options: [
-      { text: "이 노래 틀면 분위기가 확 살아나!", type: "beat" },
-      { text: "이 곡은 리듬이 진짜 매력적이야", type: "groove" },
-      { text: "가사가 마치 내 이야기 같아", type: "mellow" },
-      { text: "기타가 들어오는 순간 너무 좋아", type: "band" }
-    ]
-  },
-  {
-    question: "마음에 드는 노래를 반복 재생하는 이유는?",
-    options: [
-      { text: "특정 가사가 계속 마음에 남아서", type: "mellow" },
-      { text: "악기 소리와 곡의 구성이 좋아서", type: "band" },
-      { text: "박자와 후렴이 중독적이어서", type: "beat" },
-      { text: "보컬의 톤과 그루브가 좋아서", type: "groove" }
-    ]
-  },
-  {
-    question: "지금 딱 한 장르만 골라 듣는다면?",
-    options: [
-      { text: "R&B / 소울", type: "groove" },
-      { text: "힙합 / 댄스", type: "beat" },
-      { text: "인디 / 록 / 밴드", type: "band" },
-      { text: "발라드 / 어쿠스틱", type: "mellow" }
-    ]
-  },
-  {
-    question: "가장 추천받고 싶은 플레이리스트는?",
-    options: [
-      { text: "숨은 밴드 명곡 모음", type: "band" },
-      { text: "에너지가 차오르는 비트 모음", type: "beat" },
-      { text: "가사 좋은 조용한 음악 모음", type: "mellow" },
-      { text: "분위기 좋은 그루브 음악 모음", type: "groove" }
-    ]
-  }
-];
-
-
-// =============================================
-// 4. 공통 변수 및 함수
-// =============================================
-
-const quizBox = document.getElementById("quiz-box");
-const playlistGrid = document.getElementById("playlist-grid");
-
-let currentQuestion = 0;
-let answers = [];
-
-// 화면에 표시할 문자를 안전하게 처리
-function escapeHTML(value) {
-  return String(value).replace(/[&<>"']/g, char => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&#39;"
-  })[char]);
-}
-
-// 실제 음악 링크가 있는지 확인
-function validLink(url) {
-  try {
-    const parsed = new URL(url);
-    return parsed.protocol === "https:" ? parsed.href : "";
-  } catch {
-    return "";
-  }
-}
-
-// 유튜브 재생목록 임베드 링크 확인
-function validEmbed(url) {
-  try {
-    const parsed = new URL(url);
-
-    const allowedHosts = [
-      "www.youtube.com",
-      "www.youtube-nocookie.com"
-    ];
-
-    if (
-      parsed.protocol === "https:" &&
-      allowedHosts.includes(parsed.hostname) &&
-      parsed.pathname.startsWith("/embed/")
-    ) {
-      return parsed.href;
-    }
-
-    return "";
-  } catch {
-    return "";
-  }
-}
-
-
-// =============================================
-// 5. 테스트 시작 화면
-// =============================================
-
-function showQuizStart() {
-  quizBox.innerHTML = `
-    <div class="quiz-intro">
-      <div class="quiz-headphone">🎧</div>
-      <h3>What's your music type?</h3>
-      <p>
-        여섯 가지 질문에 답하고<br>
-        나의 음악 취향 유형을 알아보세요!
-      </p>
-      <button class="primary-btn" id="start-quiz">
-        테스트 시작하기 →
-      </button>
-    </div>
-  `;
-
-  document.getElementById("start-quiz")
-    .addEventListener("click", startQuiz);
-}
-
-function startQuiz() {
-  currentQuestion = 0;
-  answers = Array(questions.length).fill(null);
-
-  showQuestion();
-
-  document.getElementById("quiz")
-    .scrollIntoView({ behavior: "smooth" });
-}
-
-
-// =============================================
-// 6. 테스트 문항 표시
-// =============================================
-
-function showQuestion() {
-  const question = questions[currentQuestion];
-  const selected = answers[currentQuestion];
-
-  const progress =
-    ((currentQuestion + 1) / questions.length) * 100;
-
-  quizBox.innerHTML = `
-    <div class="question-header">
-      <span>QUESTION ${currentQuestion + 1} / ${questions.length}</span>
-      <span>${Math.round(progress)}%</span>
-    </div>
-
-    <div class="progress-bar">
-      <div class="progress-fill" style="width:${progress}%"></div>
-    </div>
-
-    <h3 class="question-title">
-      Q${currentQuestion + 1}. ${escapeHTML(question.question)}
-    </h3>
-
-    <div class="answer-grid">
-      ${question.options.map((option, index) => `
-        <button
-          class="answer-btn ${selected === option.type ? "selected" : ""}"
-          data-answer="${option.type}"
-        >
-          <strong>${"ABCD"[index]}.</strong>
-          ${escapeHTML(option.text)}
-        </button>
-      `).join("")}
-    </div>
-
-    <div class="question-buttons">
-      <button class="secondary-btn" id="prev-btn"
-        ${currentQuestion === 0 ? "disabled" : ""}>
-        ← 이전
-      </button>
-
-      <button class="primary-btn" id="next-btn"
-        ${selected === null ? "disabled" : ""}>
-        ${currentQuestion === questions.length - 1
-          ? "결과 확인하기 →"
-          : "다음 질문 →"}
-      </button>
-    </div>
-  `;
-
-  // 답변 선택
-  document.querySelectorAll(".answer-btn").forEach(button => {
-    button.addEventListener("click", () => {
-      answers[currentQuestion] = button.dataset.answer;
-      showQuestion();
-    });
-  });
-
-  // 이전 질문
-  document.getElementById("prev-btn")
-    .addEventListener("click", () => {
-      if (currentQuestion > 0) {
-        currentQuestion--;
-        showQuestion();
-      }
-    });
-
-  // 다음 질문 또는 결과
-  document.getElementById("next-btn")
-    .addEventListener("click", () => {
-      if (answers[currentQuestion] === null) return;
-
-      if (currentQuestion < questions.length - 1) {
-        currentQuestion++;
-        showQuestion();
-      } else {
-        showResult();
-      }
-    });
-}
-
-
-// =============================================
-// 7. 테스트 결과 계산
-// =============================================
-
-function calculateResult() {
-  const scores = {
-    groove: 0,
-    beat: 0,
-    band: 0,
-    mellow: 0
-  };
-
-  answers.forEach((type, index) => {
-    // Q5는 장르 직접 선택이므로 2점
-    const point = index === 4 ? 2 : 1;
-    scores[type] += point;
-  });
-
-  const maxScore = Math.max(...Object.values(scores));
-
-  const candidates = Object.keys(scores).filter(
-    type => scores[type] === maxScore
+  APP.renderCards(
+    document.getElementById("all-playlists")
   );
-
-  // 동점이면 Q5, 그다음 Q1의 선택 우선
-  if (candidates.includes(answers[4])) {
-    return answers[4];
-  }
-
-  if (candidates.includes(answers[0])) {
-    return answers[0];
-  }
-
-  return candidates[0];
-}
-
-
-// =============================================
-// 8. 플레이리스트 곡 목록 생성
-// =============================================
-
-function createTrackList(playlist) {
-  return `
-    <div class="track-area">
-      <div class="track-header">
-        <h4>TRACKLIST</h4>
-        <span>${playlist.tracks.length}곡</span>
-      </div>
-
-      <ol class="track-list">
-        ${playlist.tracks.map((song, index) => {
-          const url = validLink(song.url);
-
-          return `
-            <li class="track">
-              <span class="track-number">
-                ${String(index + 1).padStart(2, "0")}
-              </span>
-
-              <div class="track-icon">♫</div>
-
-              <div class="track-info">
-                <strong>${escapeHTML(song.title)}</strong>
-                <span>${escapeHTML(song.artist)}</span>
-              </div>
-
-              ${url
-                ? `<a class="listen-btn"
-                     href="${escapeHTML(url)}"
-                     target="_blank"
-                     rel="noopener noreferrer">
-                     ▶ 듣기
-                   </a>`
-                : `<span class="listen-disabled">
-                     준비 중
-                   </span>`
-              }
-            </li>
-          `;
-        }).join("")}
-      </ol>
-    </div>
-  `;
-}
-
-
-// =============================================
-// 9. 플레이리스트 재생 영역
-// =============================================
-
-function createPlayer(playlist) {
-  const embed = validEmbed(playlist.embedUrl);
-
-  if (embed) {
-    return `
-      <div class="player-area">
-        <h4>♫ 플레이리스트 전체 감상</h4>
-
-        <iframe
-          src="${escapeHTML(embed)}"
-          title="${escapeHTML(playlist.title)} 재생목록"
-          allow="encrypted-media; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    `;
-  }
-
-  return `
-    <div class="player-placeholder">
-      <div class="player-symbol">♫</div>
-      <strong>플레이리스트 전체 감상</strong>
-      <p>
-        아직 재생목록이 등록되지 않았어요.<br>
-        팀원이 유튜브 재생목록을 연결하면<br>
-        이곳에서 음악을 들을 수 있어요.
-      </p>
-    </div>
-  `;
-}
-
-
-// =============================================
-// 10. 플레이리스트 콘텐츠
-// =============================================
-
-function createPlaylistContent(type) {
-  const playlist = playlists[type];
-
-  return `
-    <div class="recommended-playlist">
-      <div class="playlist-main-info">
-        <div class="cover-large cover-${type}">
-          ${playlist.symbol}
-        </div>
-
-        <div class="playlist-text">
-          <span class="playlist-member">
-            ${escapeHTML(playlist.member)} ·
-            ${escapeHTML(playlist.genre)}
-          </span>
-
-          <h3>${escapeHTML(playlist.title)}</h3>
-
-          <p>${escapeHTML(playlist.description)}</p>
-
-          <div class="tag-row">
-            ${playlist.tags.map(tag => `
-              <span class="tag">#${escapeHTML(tag)}</span>
-            `).join("")}
-          </div>
-        </div>
-      </div>
-
-      ${createPlayer(playlist)}
-
-      ${createTrackList(playlist)}
-    </div>
-  `;
-}
-
-
-// =============================================
-// 11. 테스트 결과 화면
-// =============================================
-
-function showResult() {
-  const resultType = calculateResult();
-  const type = musicTypes[resultType];
-
-  quizBox.innerHTML = `
-    <div class="result">
-
-      <!-- 취향 유형 -->
-      <div class="result-hero">
-        <div class="result-icon">🎧</div>
-
-        <span class="result-label">
-          YOUR MUSIC TYPE
-        </span>
-
-        <h2>${escapeHTML(type.name)}</h2>
-
-        <span class="result-genre">
-          ${escapeHTML(type.genre)}
-        </span>
-
-        <p>${escapeHTML(type.description)}</p>
-
-        <div class="result-tags">
-          ${type.keywords.map(keyword => `
-            <span>#${escapeHTML(keyword)}</span>
-          `).join("")}
-        </div>
-      </div>
-
-      <!-- 추천 플레이리스트 -->
-      <div class="recommend-heading">
-        <span class="eyebrow">RECOMMENDED FOR YOU</span>
-        <h3>당신을 위한 플레이리스트</h3>
-        <p>
-          당신의 음악 취향에 맞춰 추천하는 플레이리스트예요!
-        </p>
-      </div>
-
-      <!-- 플레이리스트 설명 + 실제 곡 목록 -->
-      ${createPlaylistContent(resultType)}
-
-      <!-- 결과 하단 -->
-      <div class="result-buttons">
-        <button class="secondary-btn" id="restart-btn">
-          다시 테스트하기
-        </button>
-
-        <a class="primary-btn" href="#playlists">
-          다른 플레이리스트 둘러보기 ↓
-        </a>
-      </div>
-
-    </div>
-  `;
-
-  document.getElementById("restart-btn")
-    .addEventListener("click", startQuiz);
-
-  document.getElementById("quiz")
-    .scrollIntoView({ behavior: "smooth" });
-}
-
-
-// =============================================
-// 12. 모든 플레이리스트 카드 생성
-// =============================================
-
-function showPlaylistCards() {
-  playlistGrid.innerHTML = Object.entries(playlists)
-    .map(([type, playlist]) => `
-      <article class="playlist-card">
-
-        <div class="playlist-cover cover-${type}">
-          <span>${playlist.symbol}</span>
-        </div>
-
-        <div class="playlist-card-text">
-          <span class="playlist-member">
-            ${escapeHTML(playlist.member)}
-          </span>
-
-          <h3>${escapeHTML(playlist.title)}</h3>
-
-          <p>${escapeHTML(playlist.genre)}</p>
-
-          <button class="card-btn"
-                  data-playlist="${type}">
-            플레이리스트 감상하기 →
-          </button>
-        </div>
-
-      </article>
-    `).join("");
-
-  document.querySelectorAll("[data-playlist]")
-    .forEach(button => {
-      button.addEventListener("click", () => {
-        openPlaylist(button.dataset.playlist);
-      });
-    });
-}
-
-
-// =============================================
-// 13. 다른 플레이리스트 상세 내용
-// =============================================
-
-function openPlaylist(type) {
-  const detail = document.getElementById("playlist-detail");
-
-  document.getElementById("detail-content").innerHTML =
-    createPlaylistContent(type);
-
-  detail.hidden = false;
-
-  detail.scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-}
-
-document.getElementById("close-detail")
-  .addEventListener("click", () => {
-    document.getElementById("playlist-detail").hidden = true;
-  });
-
-
-// =============================================
-// 14. 팀원 소개 카드
-// =============================================
-
-function showMembers() {
-  const grid = document.getElementById("member-grid");
-
-  grid.innerHTML = Object.entries(playlists)
-    .map(([type, playlist]) => `
-      <div class="member-card">
-        <div class="member-circle cover-${type}">
-          ${playlist.symbol}
-        </div>
-
-        <h3>${escapeHTML(playlist.member)}</h3>
-        <p>${escapeHTML(playlist.genre)}</p>
-      </div>
-    `).join("");
-}
-
-
-// =============================================
-// 15. 메인 시작 버튼과 초기 실행
-// =============================================
-
-document.getElementById("hero-start")
-  .addEventListener("click", startQuiz);
-
-// 처음 사이트에 들어왔을 때 표시할 화면
-showQuizStart();
-showPlaylistCards();
-showMembers();
-
 </script>
-
 </body>
 </html>
