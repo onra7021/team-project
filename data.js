@@ -44,17 +44,17 @@ const APP = (() => {
     band: {
       member: "TEAM 03",
       genre: "ROCK · METAL",
-      title: "기타 소리 따라 걷기",
+      title: "소음과 선율 사이",
       symbol: "✦",
       description:
-        "시원한 기타와 드럼 사운드, 나만 알고 싶은 밴드 음악을 모은 플레이리스트예요.",
-      tags: ["밴드", "인디", "기타"],
+        "빠른 기타리프와 묵직한 드럼, 거침없는 보컬. 강렬한 사운드 속에서 에너지를 느낄 수 있는 음악을 모은 플레이리스트예요.",
+      tags: ["밴드", "질주감", "록"],
       tracks: [
         { title: "完全感覚Dreamer", artist: "ONE OK ROCK", url: "https://youtu.be/xGbxsiBZGPI?si=STWj3TzP6wsqqha-" },
         { title: "소년만화", artist: "Xdinary Heroes", url: "https://youtu.be/F8bv1BwZqbk?si=mXisCWjKqzkf8LWe" },
         { title: "Deep Dive", artist: "앨리스 신드롬", url: "https://youtu.be/lR1t5iheb9o?si=Tff5S6pYLMPYn1Xx" }
       ],
-      embedUrl: ""
+      embedUrl: "https://youtube.com/playlist?list=PLZZKqDWHV0k4&si=WnCfYkw_g-R79to4"
     },
 
     mellow: {
@@ -97,8 +97,8 @@ const APP = (() => {
       name: "사운드 탐험가",
       genre: "ROCK · METAL",
       description:
-        "기타와 드럼의 생생한 사운드를 좋아하는 당신! 개성 있는 음악을 발견하는 즐거움을 아는 유형이에요.",
-      keywords: ["밴드", "인디", "새로운 발견"]
+        "거침없이 몰아치는 기타와 드럼, 폭발적인 밴드 사운드에 끌리는 당신! 강렬한 리듬과 개성 있는 멜로디 속에서 자신만의 음악적 취향을 찾아가는 유형이에요.",
+      keywords: ["밴드", "질주감", "록"]
     },
 
     mellow: {
