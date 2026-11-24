@@ -66,9 +66,9 @@ const APP = (() => {
         "한 줄의 가사만으로도 위로가 되는, 따뜻하고 잔잔한 음악을 골랐어요.",
       tags: ["감성", "가사", "어쿠스틱"],
       tracks: [
-        { title: "첫 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "두 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "세 번째 곡 입력", artist: "가수 이름", url: "" }
+        { title: "아이와 나의 바다", artist: "아이유", url: "https://www.youtube.com/watch?v=VEHsGajcuXE" },
+        { title: "미안해 미워해 사랑해", artist: "크러쉬", url: "https://www.youtube.com/watch?v=UIDha6_mBNA" },
+        { title: "잘 지내자, 우리", artist: "로이킴", url: "https://www.youtube.com/watch?v=MbSAeRQl0Xw" }
       ],
       embedUrl: ""
     }
