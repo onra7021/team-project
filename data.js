@@ -43,7 +43,7 @@ const APP = (() => {
 
     band: {
       member: "TEAM 03",
-      genre: "INDIE · ROCK",
+      genre: "ROCK",
       title: "기타 소리 따라 걷기",
       symbol: "✦",
       description:
