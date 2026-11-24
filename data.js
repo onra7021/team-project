@@ -43,16 +43,16 @@ const APP = (() => {
 
     band: {
       member: "TEAM 03",
-      genre: "ROCK",
+      genre: "ROCK · METAL",
       title: "기타 소리 따라 걷기",
       symbol: "✦",
       description:
         "시원한 기타와 드럼 사운드, 나만 알고 싶은 밴드 음악을 모은 플레이리스트예요.",
       tags: ["밴드", "인디", "기타"],
       tracks: [
-        { title: "첫 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "두 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "세 번째 곡 입력", artist: "가수 이름", url: "" }
+        { title: "完全感覚Dreamer", artist: "ONE OK ROCK", url: "https://youtu.be/xGbxsiBZGPI?si=STWj3TzP6wsqqha-" }
+        { title: "소년만화", artist: "Xdinary Heroes", url: "https://youtu.be/F8bv1BwZqbk?si=mXisCWjKqzkf8LWe" }
+        { title: "Deep Dive", artist: "앨리스 신드롬", url: "https://youtu.be/lR1t5iheb9o?si=Tff5S6pYLMPYn1Xx" }
       ],
       embedUrl: ""
     },
@@ -95,7 +95,7 @@ const APP = (() => {
 
     band: {
       name: "사운드 탐험가",
-      genre: "INDIE · ROCK",
+      genre: "ROCK · METAL",
       description:
         "기타와 드럼의 생생한 사운드를 좋아하는 당신! 개성 있는 음악을 발견하는 즐거움을 아는 유형이에요.",
       keywords: ["밴드", "인디", "새로운 발견"]
