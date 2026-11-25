@@ -1,45 +1,149 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>오늘의 BGM</title>
-  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>four:wave | 나만의 음악 찾기</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <main class="minihome">
-    <header class="titlebar">
-      <h1>♫ 오늘의 BGM</h1>
-      <p>내 하루에 어울리는 노래를 모아 둔 미니홈피</p>
-    </header>
+<div class="site">
 
-    <div class="layout">
-      <aside class="panel">
-        <p class="label">MY PROFILE</p>
-        <div class="avatar" aria-hidden="true">🎧</div>
-        <h2>음악수집가</h2>
-        <p>이어폰 꽂고 집에 가는 시간을 좋아해요.</p>
-      </aside>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">♫</span> four:wave
+    </a>
 
-      <section class="panel">
-        <p class="label">PLAYLIST 01</p>
-        <h2>새벽에 듣는 노래</h2>
-        <ol class="tracks">
-          <li>
-            <a href="https://www.youtube.com/results?search_query=IU+Through+the+Night">
-              밤편지 · 아이유 ↗
-            </a>
-            <p>불을 끄고 하루를 마무리할 때.</p>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/results?search_query=The+Black+Skirts+Everything">
-              Everything · 검정치마 ↗
-            </a>
-            <p>늦은 밤 버스 창밖을 볼 때.</p>
-          </li>
-        </ol>
-      </section>
+    <nav>
+      <a href="quiz.html">취향 테스트</a>
+      <a href="#playlists">플레이리스트</a>
+      <a href="#members">팀 소개</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 메인 소개 -->
+    <section class="hero">
+      <div class="hero-text">
+        <span class="hero-label">FIND YOUR SOUND</span>
+
+        <h1>
+          당신의 취향엔<br>
+          어떤 리듬이 흐르나요?
+        </h1>
+
+        <p>
+          6개의 질문으로 나만의 음악 취향을 발견하고,<br>
+          네 명의 큐레이터가 직접 고른<br>
+          플레이리스트를 만나보세요.
+        </p>
+
+        <a href="quiz.html" class="primary-btn hero-btn">
+          나의 음악 취향 찾기 →
+        </a>
+      </div>
+
+      <div class="record-area">
+        <div class="record">
+          <div class="record-label">
+            YOUR<br>SOUND
+            <small>33⅓ RPM</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="steps">
+      <div><strong>01</strong> 취향 테스트</div>
+      <div><strong>02</strong> 나의 유형 발견</div>
+      <div><strong>03</strong> 플레이리스트 감상</div>
     </div>
+
+    <!-- 테스트 안내 -->
+    <section class="test-promo">
+      <div class="promo-icon">🎧</div>
+
+      <div>
+        <span class="eyebrow">MUSIC TASTE TEST</span>
+        <h2>나와 어울리는 음악은 무엇일까?</h2>
+        <p>
+          그루비 러버? 리듬 중독자?<br>
+          나의 음악 유형을 확인하고 맞춤 플레이리스트를 추천받아 보세요.
+        </p>
+      </div>
+
+      <a href="quiz.html" class="primary-btn">
+        테스트 시작 →
+      </a>
+    </section>
+
+    <!-- 모든 팀원 플레이리스트 -->
+    <section class="section" id="playlists">
+      <span class="eyebrow">EXPLORE PLAYLISTS</span>
+
+      <h2>우리의 플레이리스트</h2>
+
+      <p class="section-desc">
+        테스트를 하지 않아도 괜찮아요.<br>
+        네 명이 직접 만든 플레이리스트를 둘러보세요.
+      </p>
+
+      <div class="playlist-grid" id="all-playlists"></div>
+    </section>
+
+    <!-- 팀원 소개 -->
+    <section class="section members-section" id="members">
+      <span class="eyebrow">OUR CURATORS</span>
+      <h2>네 명의 취향, 하나의 음악 공간</h2>
+
+      <p class="section-desc">
+        각자 좋아하는 음악을 직접 고르고 소개하는
+        네 명의 음악 큐레이터입니다.
+      </p>
+
+      <div class="member-grid">
+        <div class="member-card">
+          <span class="member-avatar cover-groove">☾</span>
+          <strong>TEAM 01</strong>
+          <small>R&B · SOUL</small>
+        </div>
+
+        <div class="member-card">
+          <span class="member-avatar cover-beat">✷</span>
+          <strong>TEAM 02</strong>
+          <small>HIP-HOP · DANCE</small>
+        </div>
+
+        <div class="member-card">
+          <span class="member-avatar cover-band">✦</span>
+          <strong>TEAM 03</strong>
+          <small>INDIE · ROCK</small>
+        </div>
+
+        <div class="member-card">
+          <span class="member-avatar cover-mellow">♡</span>
+          <strong>TEAM 04</strong>
+          <small>BALLAD · ACOUSTIC</small>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <footer>
+    FOUR CURATORS · MANY MOODS · ONE SOUND SPACE
+  </footer>
+
+</div>
+
+<script src="data.js"></script>
+<script>
+  APP.renderCards(
+    document.getElementById("all-playlists")
+  );
+</script>
 </body>
 </html>

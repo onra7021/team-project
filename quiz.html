@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>음악 취향 테스트 | four:wave</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="site">
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">♫</span> four:wave
+    </a>
+
+    <nav>
+      <a href="index.html">홈으로</a>
+      <a href="index.html#playlists">플레이리스트</a>
+    </nav>
+  </header>
+
+  <main class="quiz-page">
+    <div class="page-heading">
+      <span class="eyebrow">MUSIC TASTE TEST</span>
+      <h1>나의 음악 취향 찾기</h1>
+      <p>지금 가장 마음에 드는 답변을 골라주세요!</p>
+    </div>
+
+    <div class="quiz-panel">
+
+      <div class="question-header">
+        <span id="question-count">QUESTION 1 / 6</span>
+        <span id="progress-text">17%</span>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <h2 id="question-title"></h2>
+
+      <div class="answer-grid" id="answer-grid"></div>
+
+      <div class="question-actions">
+        <button id="prev-btn" class="secondary-btn">
+          ← 이전
+        </button>
+
+        <button id="next-btn" class="primary-btn">
+          다음 질문 →
+        </button>
+      </div>
+
+    </div>
+
+    <p class="quiz-note">
+      총 6개의 질문 · 약 1분 소요
+    </p>
+  </main>
+
+  <footer>
+    FIND YOUR SOUND · FOUR:WAVE
+  </footer>
+
+</div>
+
+<script src="data.js"></script>
+<script>
+  const questions = APP.questions;
+
+  let current = 0;
+  let answers = Array(questions.length).fill(null);
+
+  const title = document.getElementById("question-title");
+  const grid = document.getElementById("answer-grid");
+  const nextBtn = document.getElementById("next-btn");
+  const prevBtn = document.getElementById("prev-btn");
+
+  function renderQuestion() {
+    const question = questions[current];
+
+    const progress = Math.round(
+      (current + 1) / questions.length * 100
+    );
+
+    document.getElementById("question-count").textContent =
+      `QUESTION ${current + 1} / ${questions.length}`;
+
+    document.getElementById("progress-text").textContent =
+      progress + "%";
+
+    document.getElementById("progress-fill").style.width =
+      progress + "%";
+
+    title.textContent =
+      `Q${current + 1}. ${question.question}`;
+
+    grid.innerHTML = "";
+
+    question.options.forEach((option, index) => {
+      const button = document.createElement("button");
+
+      button.type = "button";
+      button.className = "answer-option";
+
+      if (answers[current] === option.type) {
+        button.classList.add("selected");
+      }
+
+      button.textContent =
+        `${"ABCD"[index]}. ${option.text}`;
+
+      button.addEventListener("click", () => {
+        answers[current] = option.type;
+        renderQuestion();
+      });
+
+      grid.appendChild(button);
+    });
+
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = answers[current] === null;
+
+    nextBtn.textContent =
+      current === questions.length - 1
+        ? "결과 확인하기 →"
+        : "다음 질문 →";
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (current > 0) {
+      current--;
+      renderQuestion();
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (answers[current] === null) return;
+
+    if (current < questions.length - 1) {
+      current++;
+      renderQuestion();
+    } else {
+      const result = APP.calculateResult(answers);
+
+      if (result) {
+        // 결과는 별도의 페이지에서 표시!
+        window.location.href =
+          "result.html?type=" + encodeURIComponent(result);
+      }
+    }
+  });
+
+  renderQuestion();
+</script>
+</body>
+</html>
