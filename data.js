@@ -27,12 +27,12 @@ const APP = (() => {
 
     beat: {
       member: "TEAM 02",
-      genre: "HIP-HOP · DANCE",
+      genre: "POP · Trend",
       title: "오늘은 볼륨을 높여",
       symbol: "✷",
       description:
         "신나는 비트와 리듬으로 기분을 끌어올리고 싶을 때 듣는 플레이리스트예요.",
-      tags: ["힙합", "비트", "에너지"],
+      tags: ["팝송", "비트", "에너지"],
       tracks: [
         { title: "첫 번째 곡 입력", artist: "가수 이름", url: "" },
         { title: "두 번째 곡 입력", artist: "가수 이름", url: "" },
@@ -87,10 +87,10 @@ const APP = (() => {
 
     beat: {
       name: "리듬 중독자",
-      genre: "HIP-HOP · DANCE",
+      genre: "POP · TREND",
       description:
         "강렬한 비트에 끌리는 당신! 음악을 통해 에너지를 얻고 신나는 리듬에 몸을 맡기는 유형이에요.",
-      keywords: ["강렬한 비트", "에너지", "힙합"]
+      keywords: ["강렬한 비트", "에너지", "팝송"]
     },
 
     band: {
@@ -153,7 +153,7 @@ const APP = (() => {
       question: "지금 딱 한 장르만 골라 듣는다면?",
       options: [
         { text: "R&B / 소울", type: "groove" },
-        { text: "힙합 / 댄스", type: "beat" },
+        { text: "팝송 / 트랜디 팝", type: "beat" },
         { text: "인디 / 록 / 밴드", type: "band" },
         { text: "발라드 / 어쿠스틱", type: "mellow" }
       ]
