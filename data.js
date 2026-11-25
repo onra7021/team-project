@@ -34,9 +34,9 @@ const APP = (() => {
         "신나는 비트와 리듬으로 기분을 끌어올리고 싶을 때 듣는 플레이리스트예요.",
       tags: ["팝송", "비트", "에너지"],
       tracks: [
-        { title: "첫 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "두 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "세 번째 곡 입력", artist: "가수 이름", url: "" }
+        { title: "I Ain't Worried", artist: "OneRepulic", url: "https://www.youtube.com/watch?v=INak4ORss18&list=RDINak4ORss18&start_radio=1" },
+        { title: "Every second", artist: "Mina Okabe", url: "https://www.youtube.com/watch?v=d_nNfmIZEUU&list=RDd_nNfmIZEUU&start_radio=1" },
+        { title: "Lose my mind", artist: " Don Toliver", url: "https://www.youtube.com/watch?v=MeOjV0inR1Y&list=RDMeOjV0inR1Y&start_radio=1" }
       ],
       embedUrl: ""
     },
