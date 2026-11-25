@@ -1,51 +1,1066 @@
-* { box-sizing: border-box; }
+
+/* ========================================
+   FOUR:WAVE - COMMON STYLE
+======================================== */
+
+/* 1. 기본 설정 */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
-  padding: 32px 16px;
-  background: #dceaf5;
-  color: #26364a;
-  font-family: "Malgun Gothic", sans-serif;
+  padding: 24px 16px;
+  background: #f0ede8;
+  color: #28384e;
+  font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
 }
 
-.minihome {
-  max-width: 760px;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #8ca3d5;
+  outline-offset: 3px;
+}
+
+.site {
+  max-width: 1080px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 16px;
-  border: 2px solid #7795ae;
+  border: 1px solid #e4ded5;
   border-radius: 18px;
-  background: #f8fbff;
+  background: #fffcf8;
+  overflow: hidden;
 }
 
-.titlebar {
-  margin-bottom: 12px;
-  padding: 12px 16px;
-  border: 1px dashed #7795ae;
-  border-radius: 10px;
-  background: #eaf3fb;
+
+/* 2. 상단 메뉴 */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 19px 30px;
+  background: #ffffff;
 }
 
-.layout {
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #263d60;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.logo-icon {
   display: grid;
-  grid-template-columns: 170px 1fr;
-  gap: 12px;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #dce6f7;
+  color: #4d6998;
 }
 
-.panel {
-  padding: 16px;
-  border: 1px solid #adc2d5;
-  border-radius: 10px;
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header nav a {
+  color: #64758b;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  color: #334f7e;
+}
+
+
+/* 3. 공통 버튼 */
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.primary-btn {
+  border: 1px solid #334f7e;
+  background: #334f7e;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #4b6a9e;
+  border-color: #4b6a9e;
+}
+
+.secondary-btn {
+  border: 1px solid #d5deea;
+  background: white;
+  color: #405a80;
+}
+
+.secondary-btn:hover {
+  background: #edf2fa;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+/* 4. 메인페이지 비주얼 */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  align-items: center;
+  gap: 25px;
+  padding: 75px 50px;
+  background: linear-gradient(120deg, #192a46, #304a76, #596994);
+  color: white;
+}
+
+.hero-label {
+  font-size: 12px;
+  color: #c4d2ed;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  margin: 18px 0;
+  font-size: 37px;
+  line-height: 1.45;
+  letter-spacing: -1px;
+}
+
+.hero-text p {
+  color: #dbe5f5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  border-color: #e8e6ff;
+  background: #e8e6ff;
+  color: #263c61;
+}
+
+.hero-btn:hover {
+  border-color: #d3d1fa;
+  background: #d3d1fa;
+}
+
+
+/* 5. LP 레코드 */
+
+.record-area {
+  display: grid;
+  place-items: center;
+}
+
+.record {
+  display: grid;
+  place-items: center;
+  width: 210px;
+  height: 210px;
+  border: 8px solid #131d30;
+  border-radius: 50%;
+  background: repeating-radial-gradient(
+    circle,
+    #18243a 0px,
+    #18243a 4px,
+    #26344e 5px,
+    #18243a 8px
+  );
+  box-shadow: 14px 18px 32px #10192b66;
+}
+
+.record-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #bab2e6;
+  color: #293859;
+  font-size: 15px;
+  line-height: 1.3;
+  text-align: center;
+  font-weight: bold;
+}
+
+.record-label small {
+  margin-top: 6px;
+  font-size: 9px;
+  font-weight: normal;
+}
+
+
+/* 6. 이용 순서 */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 20px;
+  background: #eaf0fa;
+  color: #607492;
+  font-size: 12px;
+  text-align: center;
+}
+
+.steps strong {
+  margin-right: 7px;
+  color: #314b76;
+}
+
+
+/* 7. 테스트 안내 배너 */
+
+.test-promo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 35px;
+  padding: 28px;
+  border-radius: 15px;
+  background: #edf0f8;
+}
+
+.promo-icon {
+  font-size: 46px;
+}
+
+.test-promo > div:nth-child(2) {
+  flex: 1;
+}
+
+.test-promo h2 {
+  margin: 8px 0;
+  font-size: 21px;
+}
+
+.test-promo p {
+  color: #708098;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+
+/* 8. 공통 섹션 */
+
+.section {
+  padding: 50px 40px;
+}
+
+.eyebrow {
+  color: #8a7caf;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.section h2 {
+  margin: 12px 0;
+  font-size: 26px;
+  line-height: 1.4;
+}
+
+.section-desc {
+  margin: 0 0 25px;
+  color: #8190a3;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+
+/* 9. 플레이리스트 카드 */
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.playlist-card {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #e5e6e9;
+  border-radius: 13px;
+  background: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.playlist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px #26364a1a;
+}
+
+.playlist-cover {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1 / 1;
+  font-size: 66px;
+}
+
+.playlist-card-body {
+  padding: 14px;
+}
+
+.playlist-card-body small {
+  color: #8492a6;
+  font-size: 11px;
+}
+
+.playlist-card-body h3 {
+  margin: 9px 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.playlist-card-body p {
+  color: #8492a6;
+  font-size: 12px;
+}
+
+.card-link {
+  display: block;
+  margin-top: 14px;
+  padding: 10px 6px;
+  border: 1px solid #dbe3ef;
+  border-radius: 7px;
+  color: #4a668f;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.playlist-card:hover .card-link {
+  background: #edf2fa;
+}
+
+
+/* 10. 장르별 색상 */
+
+.cover-groove {
+  background: linear-gradient(135deg, #c0a9df, #7963aa);
+  color: white;
+}
+
+.cover-beat {
+  background: linear-gradient(135deg, #f1b89f, #c2745e);
+  color: white;
+}
+
+.cover-band {
+  background: linear-gradient(135deg, #b4d5b8, #618d76);
+  color: white;
+}
+
+.cover-mellow {
+  background: linear-gradient(135deg, #b8cee9, #6789b9);
+  color: white;
+}
+
+
+/* 11. 팀원 소개 */
+
+.members-section {
+  background: #f3f0eb;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 23px 12px;
+  border: 1px solid #e6e2dc;
+  border-radius: 12px;
   background: white;
 }
 
-h1, h2 { margin: 0; }
-p { margin: 8px 0; }
-.label { color: #426482; font-size: 12px; font-weight: bold; }
-.avatar { margin: 12px 0; font-size: 44px; }
-.tracks { padding-left: 24px; }
-.tracks li { padding: 8px 0; border-bottom: 1px dashed #adc2d5; }
-a { color: #235782; }
+.member-avatar {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  font-size: 35px;
+}
 
-@media (max-width: 520px) {
-  .layout { grid-template-columns: 1fr; }
+.member-card strong {
+  font-size: 14px;
+}
+
+.member-card small {
+  color: #8b96a5;
+  font-size: 11px;
+}
+
+
+/* ========================================
+   QUIZ PAGE
+======================================== */
+
+/* 12. 테스트 페이지 전체 */
+
+.quiz-page {
+  min-height: 650px;
+  padding: 65px 30px;
+  background: #f5f6fa;
+}
+
+.page-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.page-heading h1 {
+  margin: 14px 0;
+  font-size: 30px;
+}
+
+.page-heading p {
+  color: #8290a1;
+  font-size: 14px;
+}
+
+.quiz-panel {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 35px;
+  border: 1px solid #e2e7f0;
+  border-radius: 17px;
+  background: white;
+  box-shadow: 0 8px 24px #2539530a;
+}
+
+
+/* 13. 테스트 진행 상태 */
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  color: #7486a2;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 7px;
+  margin: 13px 0 30px;
+  border-radius: 20px;
+  background: #e8ecf3;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0;
+  height: 100%;
+  border-radius: 20px;
+  background: #7892c5;
+  transition: width 0.2s;
+}
+
+#question-title {
+  margin: 10px 0 28px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+
+/* 14. 테스트 선택지 */
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.answer-option {
+  min-height: 70px;
+  padding: 17px;
+  border: 1px solid #dfe5ed;
+  border-radius: 10px;
+  background: #fafcff;
+  color: #40536b;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.answer-option:hover {
+  border-color: #91a6d0;
+  background: #f0f4fc;
+}
+
+.answer-option.selected {
+  border: 2px solid #637fb6;
+  background: #e9f0fb;
+  font-weight: bold;
+}
+
+.question-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.quiz-note {
+  margin-top: 25px;
+  color: #9aa6b5;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* ========================================
+   RESULT PAGE
+======================================== */
+
+/* 15. 테스트 결과 배너 */
+
+.result-page {
+  background: #fffcf8;
+}
+
+.result-banner {
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #233753, #455c87);
+  color: white;
+  text-align: center;
+}
+
+.result-emoji {
+  margin-bottom: 12px;
+  font-size: 48px;
+}
+
+.result-label {
+  color: #c4d0ec;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.result-banner h1 {
+  margin: 14px 0 8px;
+  font-size: 38px;
+}
+
+.result-genre {
+  color: #cbd7ed;
+  font-size: 14px;
+}
+
+.result-banner p {
+  max-width: 550px;
+  margin: 24px auto;
+  color: #edf3ff;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.result-keywords {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.result-keywords span {
+  padding: 8px 13px;
+  border-radius: 20px;
+  background: #ffffff22;
+  font-size: 12px;
+}
+
+.result-content {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.result-actions,
+.center-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.other-section {
+  background: #f1f2f7;
+}
+
+
+/* ========================================
+   PLAYLIST DETAIL / PLAYER
+======================================== */
+
+/* 16. 플레이리스트 상세 콘텐츠 */
+
+.playlist-feature {
+  padding: 25px;
+  border: 1px solid #e2e7f0;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+.playlist-feature-top {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.large-cover {
+  display: grid;
+  place-items: center;
+  width: 170px;
+  height: 170px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  font-size: 72px;
+}
+
+.feature-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.feature-info h2 {
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+.feature-info p {
+  color: #6f7f93;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.tag-row span {
+  padding: 7px 11px;
+  border-radius: 20px;
+  background: #ebf0f8;
+  color: #607697;
+  font-size: 11px;
+}
+
+
+/* 17. 음악 재생 */
+
+.music-player {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 25px;
+  border: none;
+  border-radius: 12px;
+}
+
+.player-placeholder {
+  margin-top: 25px;
+  padding: 35px 15px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #283f65, #50658e);
+  color: white;
+  text-align: center;
+}
+
+.player-placeholder div {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.player-placeholder strong {
+  font-size: 16px;
+}
+
+.player-placeholder p {
+  color: #dbe5f5;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+
+/* 18. 수록곡 목록 */
+
+.track-section {
+  margin-top: 30px;
+}
+
+.track-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e7eaf0;
+}
+
+.track-heading h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.track-heading span {
+  color: #8b97aa;
+  font-size: 12px;
+}
+
+.track-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.track-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 4px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.track-number {
+  width: 24px;
+  color: #98a4b4;
+  font-size: 12px;
+}
+
+.track-art {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #e6edf8;
+  color: #6881aa;
+  font-size: 20px;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  flex: 1;
+}
+
+.track-info strong {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.track-info small {
+  color: #8b98a9;
+  font-size: 12px;
+}
+
+.listen-link {
+  padding: 9px 13px;
+  border-radius: 7px;
+  background: #e4ebf6;
+  color: #405f8c;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.listen-link:hover {
+  background: #d2dff0;
+}
+
+.not-ready {
+  color: #9aa5b4;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+
+/* 19. 개별 플레이리스트 페이지 */
+
+.detail-page h1 {
+  margin: 12px 0;
+  font-size: 29px;
+}
+
+.bottom-actions {
+  padding: 0 20px 45px;
+}
+
+.empty-state {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.empty-state h1 {
+  font-size: 25px;
+}
+
+.empty-state p {
+  margin: 15px 0 25px;
+  color: #8190a3;
+}
+
+
+/* 20. 하단 */
+
+footer {
+  padding: 26px 15px;
+  background: #e9e5df;
+  color: #8d8c8e;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+/* 21. 태블릿 */
+
+@media (max-width: 850px) {
+
+  .hero {
+    padding: 55px 30px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .record {
+    width: 160px;
+    height: 160px;
+  }
+
+  .record-label {
+    width: 74px;
+    height: 74px;
+    font-size: 12px;
+  }
+
+  .playlist-grid,
+  .member-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .test-promo {
+    flex-wrap: wrap;
+  }
+
+  .section {
+    padding: 45px 25px;
+  }
+}
+
+
+/* 22. 모바일 */
+
+@media (max-width: 550px) {
+
+  body {
+    padding: 0;
+  }
+
+  .site {
+    border: none;
+    border-radius: 0;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 18px 12px;
+  }
+
+  .header nav {
+    gap: 15px;
+  }
+
+  .header nav a {
+    font-size: 11px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 48px 25px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .record-area {
+    display: none;
+  }
+
+  .steps {
+    padding: 16px 5px;
+    font-size: 10px;
+  }
+
+  .steps strong {
+    display: block;
+    margin: 0 0 5px;
+  }
+
+  .test-promo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 18px;
+    padding: 23px;
+  }
+
+  .section {
+    padding: 35px 18px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .playlist-grid {
+    gap: 11px;
+  }
+
+  .playlist-cover {
+    font-size: 50px;
+  }
+
+  .playlist-card-body {
+    padding: 11px;
+  }
+
+  .playlist-card-body h3 {
+    font-size: 13px;
+  }
+
+  .member-grid {
+    gap: 9px;
+  }
+
+  .quiz-page {
+    min-height: 570px;
+    padding: 40px 15px;
+  }
+
+  .page-heading h1 {
+    font-size: 25px;
+  }
+
+  .quiz-panel {
+    padding: 22px 16px;
+  }
+
+  #question-title {
+    font-size: 19px;
+  }
+
+  .answer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .answer-option {
+    min-height: 58px;
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .question-actions {
+    gap: 8px;
+  }
+
+  .result-banner {
+    padding: 45px 20px;
+  }
+
+  .result-banner h1 {
+    font-size: 30px;
+  }
+
+  .playlist-feature {
+    padding: 15px;
+  }
+
+  .playlist-feature-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .large-cover {
+    width: 135px;
+    height: 135px;
+    font-size: 55px;
+  }
+
+  .feature-info h2 {
+    font-size: 22px;
+  }
+
+  .track-row {
+    gap: 9px;
+  }
+
+  .track-art {
+    width: 36px;
+    height: 36px;
+  }
+
+  .result-actions {
+    flex-direction: column;
+  }
 }
