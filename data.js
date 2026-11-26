@@ -222,70 +222,6 @@ const APP = (() => {
     }
   }
 
-/* 유튜브 링크에서 영상 ID 추출 */
-function getYouTubeId(link) {
-  try {
-    const url = new URL(link);
-    const host = url.hostname.toLowerCase();
-
-    let id = "";
-
-    if (host === "youtu.be") {
-      id = url.pathname.split("/")[1];
-    } else if (
-      host === "youtube.com" ||
-      host === "www.youtube.com" ||
-      host === "m.youtube.com"
-    ) {
-      if (url.pathname === "/watch") {
-        id = url.searchParams.get("v");
-      } else {
-        const parts = url.pathname.split("/");
-        if (["shorts", "embed", "live"].includes(parts[1])) {
-          id = parts[2];
-        }
-      }
-    }
-
-    // 유튜브 영상 ID 형식 검증
-    return /^[a-zA-Z0-9_-]{11}$/.test(id || "") ? id : null;
-
-  } catch (error) {
-    return null;
-  }
-}
-
-
-/* 등록된 노래들을 하나의 플레이어로 연결 */
-function createAutoEmbedURL(tracks) {
-
-  const videoIds = tracks
-    .map(track => getYouTubeId(track.url))
-    .filter(id => id !== null);
-
-  // 등록된 영상이 하나도 없는 경우
-  if (videoIds.length === 0) {
-    return "";
-  }
-
-  // 첫 번째 영상
-  const firstVideo = videoIds[0];
-
-  // 두 번째 영상부터 마지막 영상까지
-  const remainingVideos = videoIds.slice(1);
-
-  let embedURL =
-    `https://www.youtube.com/embed/${firstVideo}`;
-
-  // 나머지 영상을 재생 순서에 추가
-  if (remainingVideos.length > 0) {
-    embedURL +=
-      `?playlist=${remainingVideos.join(",")}&playsinline=1`;
-  }
-
-  return embedURL;
-}
-
   // 5. 테스트 결과 계산
 
   function calculateResult(answers) {
@@ -393,7 +329,7 @@ function createAutoEmbedURL(tracks) {
     const playlist = playlists[id];
     if (!playlist) return;
 
-const embed = createAutoEmbedURL(playlist.tracks);
+const embed = createAutoEmbedURL(playlist.embedUrl);
 
     container.innerHTML = `
       <div class="playlist-feature">
@@ -430,7 +366,7 @@ const embed = createAutoEmbedURL(playlist.tracks);
           : `<div class="player-placeholder">
                <div>♫</div>
                <strong>플레이리스트 전체 감상</strong>
-               <p>유튜브 재생목록으로 플레이리스트를 감상할 수 있어요.</p>
+               <p>재생목록을 등록하면 이곳에서 음악을 들을 수 있어요.</p>
              </div>`
         }
 
