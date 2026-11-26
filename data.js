@@ -12,31 +12,35 @@ const APP = (() => {
     groove: {
       member: "TEAM 01",
       genre: "R&B · SOUL",
-      title: "블루아워의 그루브",
+      title: "매력적인 그루브",
       symbol: "☾",
       description:
-        "하루가 끝난 밤, 부드러운 보컬과 매력적인 리듬에 집중하고 싶을 때 듣는 음악을 모았어요.",
+        "처음 몇 초만 들어도 귀를 사로잡는 도입부와 자연스럽게 몸을 움직이게 하는 리듬이 매력적인 곡들을 모았습니다. 각기 다른 분위기를 가진 R&B 음악 속에서 자신만의 취향을 발견해 보세요.",
       tags: ["그루브", "새벽", "R&B"],
       tracks: [
-        { title: "첫 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "두 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "세 번째 곡 입력", artist: "가수 이름", url: "" }
+        { title: "Something to Feel", artist: "Mac Ayres", url: "https://www.youtube.com/watch?v=foXxOmBkqQk&list=RDfoXxOmBkqQk&start_radio=1" },
+        { title: "Remain", artist: "Christian Kuria", url: "https://www.youtube.com/watch?v=0Dkxlhb2DfI&list=RD0Dkxlhb2DfI&start_radio=1" },
+        { title: "I Want You Around", artist: "Snoh Aalegra", url: "https://www.youtube.com/watch?v=JdqLKJqlvuc&list=RDJdqLKJqlvuc&start_radio=1" },
+        { title: "Lavender", artist: "Breez Kennedy", url: "https://www.youtube.com/watch?v=jkr_z9UHZhU&list=RDjkr_z9UHZhU&start_radio=1" },
+        { title: "Too Good", artist: "Christian Kuria", url: "https://www.youtube.com/watch?v=W7O03rIvP3w&list=RDW7O03rIvP3w&start_radio=1" }
       ],
       embedUrl: ""
     },
 
     beat: {
       member: "TEAM 02",
-      genre: "HIP-HOP · DANCE",
+      genre: "Trend · POP",
       title: "오늘은 볼륨을 높여",
       symbol: "✷",
       description:
         "신나는 비트와 리듬으로 기분을 끌어올리고 싶을 때 듣는 플레이리스트예요.",
-      tags: ["힙합", "비트", "에너지"],
+      tags: ["팝송", "비트", "에너지"],
       tracks: [
-        { title: "첫 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "두 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "세 번째 곡 입력", artist: "가수 이름", url: "" }
+        { title: "I Ain't Worried", artist: "OneRepulic", url: "https://www.youtube.com/watch?v=INak4ORss18&list=RDINak4ORss18&start_radio=1" },
+        { title: "Everysecond", artist: "Mina Okabe", url: "https://www.youtube.com/watch?v=d_nNfmIZEUU&list=RDd_nNfmIZEUU&start_radio=1" },
+        { title: "Lose my mind", artist: " Don Toliver", url: "https://www.youtube.com/watch?v=MeOjV0inR1Y&list=RDMeOjV0inR1Y&start_radio=1" },
+        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
       ],
       embedUrl: ""
     },
@@ -52,7 +56,9 @@ const APP = (() => {
       tracks: [
         { title: "完全感覚Dreamer", artist: "ONE OK ROCK", url: "https://youtu.be/xGbxsiBZGPI?si=STWj3TzP6wsqqha-" },
         { title: "소년만화", artist: "Xdinary Heroes", url: "https://youtu.be/F8bv1BwZqbk?si=mXisCWjKqzkf8LWe" },
-        { title: "Deep Dive", artist: "앨리스 신드롬", url: "https://youtu.be/lR1t5iheb9o?si=Tff5S6pYLMPYn1Xx" }
+        { title: "Deep Dive", artist: "앨리스 신드롬", url: "https://youtu.be/lR1t5iheb9o?si=Tff5S6pYLMPYn1Xx" },
+        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
       ],
       embedUrl: "https://youtube.com/playlist?list=PLZZKqDWHV0k4&si=WnCfYkw_g-R79to4"
     },
@@ -66,9 +72,12 @@ const APP = (() => {
         "한 줄의 가사만으로도 위로가 되는, 따뜻하고 잔잔한 음악을 골랐어요.",
       tags: ["감성", "가사", "어쿠스틱"],
       tracks: [
-        { title: "첫 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "두 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "세 번째 곡 입력", artist: "가수 이름", url: "" }
+        { title: "아이와 나의 바다", artist: "아이유", url: "https://www.youtube.com/watch?v=VEHsGajcuXE" },
+        { title: "미안해 미워해 사랑해", artist: "크러쉬", url: "https://www.youtube.com/watch?v=UIDha6_mBNA" },
+        { title: "잘 지내자, 우리", artist: "로이킴", url: "https://www.youtube.com/watch?v=MbSAeRQl0Xw" },
+        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
+        
       ],
       embedUrl: ""
     }
@@ -87,10 +96,10 @@ const APP = (() => {
 
     beat: {
       name: "리듬 중독자",
-      genre: "HIP-HOP · DANCE",
+      genre: "Trend · POP",
       description:
         "강렬한 비트에 끌리는 당신! 음악을 통해 에너지를 얻고 신나는 리듬에 몸을 맡기는 유형이에요.",
-      keywords: ["강렬한 비트", "에너지", "힙합"]
+      keywords: ["강렬한 비트", "에너지", "팝송"]
     },
 
     band: {
@@ -153,7 +162,7 @@ const APP = (() => {
       question: "지금 딱 한 장르만 골라 듣는다면?",
       options: [
         { text: "R&B / 소울", type: "groove" },
-        { text: "힙합 / 댄스", type: "beat" },
+        { text: "팝송 / 트랜디 팝", type: "beat" },
         { text: "인디 / 록 / 밴드", type: "band" },
         { text: "발라드 / 어쿠스틱", type: "mellow" }
       ]
@@ -320,7 +329,7 @@ const APP = (() => {
     const playlist = playlists[id];
     if (!playlist) return;
 
-    const embed = safeEmbed(playlist.embedUrl);
+const embed = safeEmbed(playlist.embedUrl);
 
     container.innerHTML = `
       <div class="playlist-feature">
