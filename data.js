@@ -57,8 +57,8 @@ const APP = (() => {
         { title: "完全感覚Dreamer", artist: "ONE OK ROCK", url: "https://youtu.be/xGbxsiBZGPI?si=STWj3TzP6wsqqha-" },
         { title: "소년만화", artist: "Xdinary Heroes", url: "https://youtu.be/F8bv1BwZqbk?si=mXisCWjKqzkf8LWe" },
         { title: "Deep Dive", artist: "앨리스 신드롬", url: "https://youtu.be/lR1t5iheb9o?si=Tff5S6pYLMPYn1Xx" },
-        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
+        { title: "CRY OUT", artist: "ONE OK ROCK", url: "https://youtu.be/JWSRqWpWPzE?si=9HDgJr_U1vC1S66U" },
+        { title: "초신성", artist: "행로난", url: "https://youtu.be/VRva9HvlmVI?si=_ifA6v6II5F4URqJ" }
       ],
       embedUrl: "https://youtube.com/playlist?list=PLZZKqDWHV0k4&si=WnCfYkw_g-R79to4"
     },
