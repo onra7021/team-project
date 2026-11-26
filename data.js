@@ -29,7 +29,7 @@ const APP = (() => {
 
     beat: {
       member: "TEAM 02",
-      genre: "POP · Trend",
+      genre: "Trend · POP",
       title: "오늘은 볼륨을 높여",
       symbol: "✷",
       description:
@@ -96,7 +96,7 @@ const APP = (() => {
 
     beat: {
       name: "리듬 중독자",
-      genre: "POP · TREND",
+      genre: "Trend · POP",
       description:
         "강렬한 비트에 끌리는 당신! 음악을 통해 에너지를 얻고 신나는 리듬에 몸을 맡기는 유형이에요.",
       keywords: ["강렬한 비트", "에너지", "팝송"]
