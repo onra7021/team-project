@@ -20,7 +20,8 @@ const APP = (() => {
       tracks: [
         { title: "첫 번째 곡 입력", artist: "가수 이름", url: "" },
         { title: "두 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "세 번째 곡 입력", artist: "가수 이름", url: "" }
+        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
       ],
       embedUrl: ""
     },
@@ -36,7 +37,9 @@ const APP = (() => {
       tracks: [
         { title: "I Ain't Worried", artist: "OneRepulic", url: "https://www.youtube.com/watch?v=INak4ORss18&list=RDINak4ORss18&start_radio=1" },
         { title: "Everysecond", artist: "Mina Okabe", url: "https://www.youtube.com/watch?v=d_nNfmIZEUU&list=RDd_nNfmIZEUU&start_radio=1" },
-        { title: "Lose my mind", artist: " Don Toliver", url: "https://www.youtube.com/watch?v=MeOjV0inR1Y&list=RDMeOjV0inR1Y&start_radio=1" }
+        { title: "Lose my mind", artist: " Don Toliver", url: "https://www.youtube.com/watch?v=MeOjV0inR1Y&list=RDMeOjV0inR1Y&start_radio=1" },
+        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
       ],
       embedUrl: ""
     },
@@ -52,7 +55,9 @@ const APP = (() => {
       tracks: [
         { title: "完全感覚Dreamer", artist: "ONE OK ROCK", url: "https://youtu.be/xGbxsiBZGPI?si=STWj3TzP6wsqqha-" },
         { title: "소년만화", artist: "Xdinary Heroes", url: "https://youtu.be/F8bv1BwZqbk?si=mXisCWjKqzkf8LWe" },
-        { title: "Deep Dive", artist: "앨리스 신드롬", url: "https://youtu.be/lR1t5iheb9o?si=Tff5S6pYLMPYn1Xx" }
+        { title: "Deep Dive", artist: "앨리스 신드롬", url: "https://youtu.be/lR1t5iheb9o?si=Tff5S6pYLMPYn1Xx" },
+        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
       ],
       embedUrl: ""
     },
@@ -68,7 +73,10 @@ const APP = (() => {
       tracks: [
         { title: "아이와 나의 바다", artist: "아이유", url: "https://www.youtube.com/watch?v=VEHsGajcuXE" },
         { title: "미안해 미워해 사랑해", artist: "크러쉬", url: "https://www.youtube.com/watch?v=UIDha6_mBNA" },
-        { title: "잘 지내자, 우리", artist: "로이킴", url: "https://www.youtube.com/watch?v=MbSAeRQl0Xw" }
+        { title: "잘 지내자, 우리", artist: "로이킴", url: "https://www.youtube.com/watch?v=MbSAeRQl0Xw" },
+        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
+        
       ],
       embedUrl: ""
     }
