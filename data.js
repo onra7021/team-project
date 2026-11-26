@@ -21,8 +21,8 @@ const APP = (() => {
         { title: "Something to Feel", artist: "Mac Ayres", url: "https://www.youtube.com/watch?v=foXxOmBkqQk&list=RDfoXxOmBkqQk&start_radio=1" },
         { title: "Remain", artist: "Christian Kuria", url: "https://www.youtube.com/watch?v=0Dkxlhb2DfI&list=RD0Dkxlhb2DfI&start_radio=1" },
         { title: "I Want You Around", artist: "Snoh Aalegra", url: "https://www.youtube.com/watch?v=JdqLKJqlvuc&list=RDJdqLKJqlvuc&start_radio=1" },
-        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
+        { title: "Lavender", artist: "Breez Kennedy", url: "https://www.youtube.com/watch?v=jkr_z9UHZhU&list=RDjkr_z9UHZhU&start_radio=1" },
+        { title: "Too Good", artist: "Christian Kuria", url: "https://www.youtube.com/watch?v=W7O03rIvP3w&list=RDW7O03rIvP3w&start_radio=1" }
       ],
       embedUrl: ""
     },
