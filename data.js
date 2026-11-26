@@ -15,7 +15,7 @@ const APP = (() => {
       title: "매력적인 그루브",
       symbol: "☾",
       description:
-        "매력적인 도입부와 리듬을 즐기고 싶을 때 듣는 플레이리스트",
+        "처음 몇 초만 들어도 귀를 사로잡는 도입부와 자연스럽게 몸을 움직이게 하는 리듬이 매력적인 곡들을 모았습니다. 각기 다른 분위기를 가진 R&B 음악 속에서 자신만의 취향을 발견해 보세요.",
       tags: ["그루브", "새벽", "R&B"],
       tracks: [
         { title: "Something to Feel", artist: "Mac Ayres", url: "https://www.youtube.com/watch?v=foXxOmBkqQk&list=RDfoXxOmBkqQk&start_radio=1" },
