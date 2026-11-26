@@ -40,7 +40,7 @@ const APP = (() => {
         { title: "Everysecond", artist: "Mina Okabe", url: "https://www.youtube.com/watch?v=d_nNfmIZEUU&list=RDd_nNfmIZEUU&start_radio=1" },
         { title: "Lose my mind", artist: " Don Toliver", url: "https://www.youtube.com/watch?v=MeOjV0inR1Y&list=RDMeOjV0inR1Y&start_radio=1" },
         { title: "Butter", artist: "BTS", url: "https://www.youtube.com/watch?v=DbXMjAYSa68&list=RDDbXMjAYSa68&start_radio=1" },
-        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
+        { title: "테스트", artist: "가수 이름", url: "" }
       ],
       embedUrl: ""
     },
