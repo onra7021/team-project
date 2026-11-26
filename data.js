@@ -12,15 +12,15 @@ const APP = (() => {
     groove: {
       member: "TEAM 01",
       genre: "R&B · SOUL",
-      title: "블루아워의 그루브",
+      title: "매력적인 그루브",
       symbol: "☾",
       description:
-        "하루가 끝난 밤, 부드러운 보컬과 매력적인 리듬에 집중하고 싶을 때 듣는 음악을 모았어요.",
+        "매력적인 도입부와 리듬을 즐기고 싶을 때 듣는 플레이리스트",
       tags: ["그루브", "새벽", "R&B"],
       tracks: [
-        { title: "첫 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "두 번째 곡 입력", artist: "가수 이름", url: "" },
-        { title: "세 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "Something to Feel", artist: "Mac Ayres", url: "https://www.youtube.com/watch?v=foXxOmBkqQk&list=RDfoXxOmBkqQk&start_radio=1" },
+        { title: "Remain", artist: "Christian Kuria", url: "https://www.youtube.com/watch?v=0Dkxlhb2DfI&list=RD0Dkxlhb2DfI&start_radio=1" },
+        { title: "I Want You Around", artist: "Snoh Aalegra", url: "https://www.youtube.com/watch?v=JdqLKJqlvuc&list=RDJdqLKJqlvuc&start_radio=1" },
         { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
         { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
       ],
