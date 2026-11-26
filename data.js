@@ -132,12 +132,12 @@ const APP = (() => {
       ]
     },
     {
-      question: "이어폰을 끼고 가장 걷고 싶은 장소는?",
+      question: "가장 좋아하는 음악 감상 상황은?",
       options: [
-        { text: "바람이 불어오는 한적한 골목", type: "band" },
-        { text: "비가 내리는 창밖을 보는 버스 안", type: "mellow" },
-        { text: "불빛이 반짝이는 늦은 밤거리", type: "groove" },
-        { text: "신나는 음악이 흐르는 페스티벌", type: "beat" }
+        { text: "운동하거나 스트레스를 해소할 때", type: "band" },
+        { text: "혼자 걸으며 생각에 잠길 때", type: "mellow" },
+        { text: "밤에 혼자 여유를 느낄 때", type: "groove" },
+        { text: "친구들과 놀거나 기분을 전환할 때", type: "beat" }
       ]
     },
     {
@@ -146,7 +146,7 @@ const APP = (() => {
         { text: "이 노래 틀면 분위기가 확 살아나!", type: "beat" },
         { text: "이 곡은 리듬이 진짜 매력적이야", type: "groove" },
         { text: "가사가 마치 내 이야기 같아", type: "mellow" },
-        { text: "기타가 들어오는 순간 너무 좋아", type: "band" }
+        { text: "사운드가 꽉 차 있어서 듣는 재미가 있어!", type: "band" }
       ]
     },
     {
@@ -159,21 +159,21 @@ const APP = (() => {
       ]
     },
     {
-      question: "지금 딱 한 장르만 골라 듣는다면?",
+      question: "음악을 듣고 난 뒤 느끼고 싶은 기분은?",
       options: [
-        { text: "R&B / 소울", type: "groove" },
-        { text: "팝송 / 트랜디 팝", type: "beat" },
-        { text: "인디 / 록 / 밴드", type: "band" },
-        { text: "발라드 / 어쿠스틱", type: "mellow" }
+        { text: "여유롭고 분위기에 취하는 기분", type: "groove" },
+        { text: "설레고 활기찬 기분", type: "beat" },
+        { text: "짜릿하고 해방감 넘치는 기분", type: "band" },
+        { text: "위로받고 마음이 편안해지는 기분", type: "mellow" }
       ]
     },
     {
-      question: "가장 추천받고 싶은 플레이리스트는?",
+      question: "지금 나의 기분을 색깔로 표현한다면?",
       options: [
-        { text: "숨은 밴드 명곡 모음", type: "band" },
-        { text: "에너지가 차오르는 비트 모음", type: "beat" },
-        { text: "가사 좋은 조용한 음악 모음", type: "mellow" },
-        { text: "분위기 좋은 그루브 음악 모음", type: "groove" }
+        { text: "강렬한 빨간색", type: "band" },
+        { text: "밝고 선명한 노란색", type: "beat" },
+        { text: "차분한 파란색", type: "mellow" },
+        { text: "신비로운 보라색", type: "groove" }
       ]
     }
   ];
