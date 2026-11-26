@@ -35,7 +35,7 @@ const APP = (() => {
       tags: ["팝송", "비트", "에너지"],
       tracks: [
         { title: "I Ain't Worried", artist: "OneRepulic", url: "https://www.youtube.com/watch?v=INak4ORss18&list=RDINak4ORss18&start_radio=1" },
-        { title: "Every second", artist: "Mina Okabe", url: "https://www.youtube.com/watch?v=d_nNfmIZEUU&list=RDd_nNfmIZEUU&start_radio=1" },
+        { title: "Everysecond", artist: "Mina Okabe", url: "https://www.youtube.com/watch?v=d_nNfmIZEUU&list=RDd_nNfmIZEUU&start_radio=1" },
         { title: "Lose my mind", artist: " Don Toliver", url: "https://www.youtube.com/watch?v=MeOjV0inR1Y&list=RDMeOjV0inR1Y&start_radio=1" }
       ],
       embedUrl: ""
