@@ -39,7 +39,7 @@ const APP = (() => {
         { title: "I Ain't Worried", artist: "OneRepulic", url: "https://www.youtube.com/watch?v=INak4ORss18&list=RDINak4ORss18&start_radio=1" },
         { title: "Everysecond", artist: "Mina Okabe", url: "https://www.youtube.com/watch?v=d_nNfmIZEUU&list=RDd_nNfmIZEUU&start_radio=1" },
         { title: "Lose my mind", artist: " Don Toliver", url: "https://www.youtube.com/watch?v=MeOjV0inR1Y&list=RDMeOjV0inR1Y&start_radio=1" },
-        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "Butter", artist: "BTS", url: "https://www.youtube.com/watch?v=DbXMjAYSa68&list=RDDbXMjAYSa68&start_radio=1" },
         { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
       ],
       embedUrl: ""
