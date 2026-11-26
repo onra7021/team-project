@@ -329,7 +329,7 @@ const APP = (() => {
     const playlist = playlists[id];
     if (!playlist) return;
 
-const embed = createAutoEmbedURL(playlist.embedUrl);
+const embed = safeEmbed(playlist.embedUrl);
 
     container.innerHTML = `
       <div class="playlist-feature">
