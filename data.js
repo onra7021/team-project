@@ -20,6 +20,7 @@ const APP = (() => {
       tracks: [
         { title: "첫 번째 곡 입력", artist: "가수 이름", url: "" },
         { title: "두 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "세 번째 곡 입력", artist: "가수 이름", url: "" },
         { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
         { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
       ],
