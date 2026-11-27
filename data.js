@@ -60,7 +60,7 @@ const APP = (() => {
     mellow: {
       member: "TEAM 04",
       genre: "BALLAD · ACOUSTIC",
-      title: "마음에 남는 문장들",
+      title: "마음에 머무는 멜로디",
       symbol: "♡",
       description:
         "한 줄의 가사만으로도 위로가 되는, 따뜻하고 잔잔한 음악을 골랐어요.",
