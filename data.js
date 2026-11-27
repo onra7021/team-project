@@ -15,14 +15,14 @@ const APP = (() => {
       title: "매력적인 그루브",
       symbol: "☾",
       description:
-        "처음 몇 초만 들어도 귀를 사로잡는 도입부와 자연스럽게 몸을 움직이게 하는 리듬이 매력적인 곡들을 모았습니다. 각기 다른 분위기를 가진 R&B 음악 속에서 자신만의 취향을 발견해 보세요.",
+        "매력적인 도입부와 리듬을 즐기고 싶을 때 듣는 플레이리스트",
       tags: ["그루브", "새벽", "R&B"],
       tracks: [
         { title: "Something to Feel", artist: "Mac Ayres", url: "https://www.youtube.com/watch?v=foXxOmBkqQk&list=RDfoXxOmBkqQk&start_radio=1" },
         { title: "Remain", artist: "Christian Kuria", url: "https://www.youtube.com/watch?v=0Dkxlhb2DfI&list=RD0Dkxlhb2DfI&start_radio=1" },
         { title: "I Want You Around", artist: "Snoh Aalegra", url: "https://www.youtube.com/watch?v=JdqLKJqlvuc&list=RDJdqLKJqlvuc&start_radio=1" },
-        { title: "Lavender", artist: "Breez Kennedy", url: "https://www.youtube.com/watch?v=jkr_z9UHZhU&list=RDjkr_z9UHZhU&start_radio=1" },
-        { title: "Too Good", artist: "Christian Kuria", url: "https://www.youtube.com/watch?v=W7O03rIvP3w&list=RDW7O03rIvP3w&start_radio=1" }
+        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
       ],
       embedUrl: ""
     },
@@ -40,7 +40,7 @@ const APP = (() => {
         { title: "Everysecond", artist: "Mina Okabe", url: "https://www.youtube.com/watch?v=d_nNfmIZEUU&list=RDd_nNfmIZEUU&start_radio=1" },
         { title: "Lose my mind", artist: " Don Toliver", url: "https://www.youtube.com/watch?v=MeOjV0inR1Y&list=RDMeOjV0inR1Y&start_radio=1" },
         { title: "Butter", artist: "BTS", url: "https://www.youtube.com/watch?v=DbXMjAYSa68&list=RDDbXMjAYSa68&start_radio=1" },
-        { title: "테스트", artist: "가수 이름", url: "" }
+        { title: "Training Season", artist: "Dua Lipa", url: "https://www.youtube.com/watch?v=CcksHEsLK6M&list=RDCcksHEsLK6M&start_radio=1" }
       ],
       embedUrl: ""
     },
@@ -48,19 +48,19 @@ const APP = (() => {
     band: {
       member: "TEAM 03",
       genre: "ROCK · METAL",
-      title: "소음과 선율 사이",
+      title: "기타 소리 따라 걷기",
       symbol: "✦",
       description:
-        "빠른 기타리프와 묵직한 드럼, 거침없는 보컬. 강렬한 사운드 속에서 에너지를 느낄 수 있는 음악을 모은 플레이리스트예요.",
-      tags: ["밴드", "질주감", "록"],
+        "시원한 기타와 드럼 사운드, 나만 알고 싶은 밴드 음악을 모은 플레이리스트예요.",
+      tags: ["밴드", "인디", "기타"],
       tracks: [
         { title: "完全感覚Dreamer", artist: "ONE OK ROCK", url: "https://youtu.be/xGbxsiBZGPI?si=STWj3TzP6wsqqha-" },
         { title: "소년만화", artist: "Xdinary Heroes", url: "https://youtu.be/F8bv1BwZqbk?si=mXisCWjKqzkf8LWe" },
         { title: "Deep Dive", artist: "앨리스 신드롬", url: "https://youtu.be/lR1t5iheb9o?si=Tff5S6pYLMPYn1Xx" },
-        { title: "CRY OUT", artist: "ONE OK ROCK", url: "https://youtu.be/JWSRqWpWPzE?si=9HDgJr_U1vC1S66U" },
-        { title: "초신성", artist: "행로난", url: "https://youtu.be/VRva9HvlmVI?si=_ifA6v6II5F4URqJ" }
+        { title: "네 번째 곡 입력", artist: "가수 이름", url: "" },
+        { title: "다섯 번째 곡 입력", artist: "가수 이름", url: "" }
       ],
-      embedUrl: "https://youtube.com/playlist?list=PLZZKqDWHV0k4&si=WnCfYkw_g-R79to4"
+      embedUrl: ""
     },
 
     mellow: {
@@ -106,8 +106,8 @@ const APP = (() => {
       name: "사운드 탐험가",
       genre: "ROCK · METAL",
       description:
-        "거침없이 몰아치는 기타와 드럼, 폭발적인 밴드 사운드에 끌리는 당신! 강렬한 리듬과 개성 있는 멜로디 속에서 자신만의 음악적 취향을 찾아가는 유형이에요.",
-      keywords: ["밴드", "질주감", "록"]
+        "기타와 드럼의 생생한 사운드를 좋아하는 당신! 개성 있는 음악을 발견하는 즐거움을 아는 유형이에요.",
+      keywords: ["밴드", "인디", "새로운 발견"]
     },
 
     mellow: {
@@ -132,12 +132,12 @@ const APP = (() => {
       ]
     },
     {
-      question: "가장 좋아하는 음악 감상 상황은?",
+      question: "이어폰을 끼고 가장 걷고 싶은 장소는?",
       options: [
-        { text: "운동하거나 스트레스를 해소할 때", type: "band" },
-        { text: "혼자 걸으며 생각에 잠길 때", type: "mellow" },
-        { text: "밤에 혼자 여유를 느낄 때", type: "groove" },
-        { text: "친구들과 놀거나 기분을 전환할 때", type: "beat" }
+        { text: "바람이 불어오는 한적한 골목", type: "band" },
+        { text: "비가 내리는 창밖을 보는 버스 안", type: "mellow" },
+        { text: "불빛이 반짝이는 늦은 밤거리", type: "groove" },
+        { text: "신나는 음악이 흐르는 페스티벌", type: "beat" }
       ]
     },
     {
@@ -146,7 +146,7 @@ const APP = (() => {
         { text: "이 노래 틀면 분위기가 확 살아나!", type: "beat" },
         { text: "이 곡은 리듬이 진짜 매력적이야", type: "groove" },
         { text: "가사가 마치 내 이야기 같아", type: "mellow" },
-        { text: "사운드가 꽉 차 있어서 듣는 재미가 있어!", type: "band" }
+        { text: "기타가 들어오는 순간 너무 좋아", type: "band" }
       ]
     },
     {
@@ -159,21 +159,21 @@ const APP = (() => {
       ]
     },
     {
-      question: "음악을 듣고 난 뒤 느끼고 싶은 기분은?",
+      question: "지금 딱 한 장르만 골라 듣는다면?",
       options: [
-        { text: "여유롭고 분위기에 취하는 기분", type: "groove" },
-        { text: "설레고 활기찬 기분", type: "beat" },
-        { text: "짜릿하고 해방감 넘치는 기분", type: "band" },
-        { text: "위로받고 마음이 편안해지는 기분", type: "mellow" }
+        { text: "R&B / 소울", type: "groove" },
+        { text: "팝송 / 트랜디 팝", type: "beat" },
+        { text: "인디 / 록 / 밴드", type: "band" },
+        { text: "발라드 / 어쿠스틱", type: "mellow" }
       ]
     },
     {
-      question: "지금 나의 기분을 색깔로 표현한다면?",
+      question: "가장 추천받고 싶은 플레이리스트는?",
       options: [
-        { text: "강렬한 빨간색", type: "band" },
-        { text: "밝고 선명한 노란색", type: "beat" },
-        { text: "차분한 파란색", type: "mellow" },
-        { text: "신비로운 보라색", type: "groove" }
+        { text: "숨은 밴드 명곡 모음", type: "band" },
+        { text: "에너지가 차오르는 비트 모음", type: "beat" },
+        { text: "가사 좋은 조용한 음악 모음", type: "mellow" },
+        { text: "분위기 좋은 그루브 음악 모음", type: "groove" }
       ]
     }
   ];
@@ -329,7 +329,7 @@ const APP = (() => {
     const playlist = playlists[id];
     if (!playlist) return;
 
-const embed = safeEmbed(playlist.embedUrl);
+    const embed = safeEmbed(playlist.embedUrl);
 
     container.innerHTML = `
       <div class="playlist-feature">
